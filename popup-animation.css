@@ -1,0 +1,264 @@
+
+
+/* Popup Animation Styles */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleOut {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+}
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutToTop {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutToBottom {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutToLeft {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutToRight {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes flipInX {
+    from {
+        transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+    to {
+        transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes flipOutX {
+    from {
+        transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+    to {
+        transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+}
+
+/* Apply animations to elements */
+.fadeInAnimation {
+    animation: fadeIn 0.3s ease-out;
+}
+
+.fadeOutAnimation {
+    animation: fadeOut 0.3s ease-out;
+}
+
+.scaleInAnimation {
+    animation: scaleIn 0.3s ease-out;
+}
+
+.scaleOutAnimation {
+    animation: scaleOut 0.3s ease-out;
+}
+
+.slideInFromTopAnimation {
+    animation: slideInFromTop 0.3s ease-out;
+}
+
+.slideOutToTopAnimation {
+    animation: slideOutToTop 0.3s ease-out;
+}
+
+.slideInFromBottomAnimation {
+    animation: slideInFromBottom 0.3s ease-out;
+}
+
+.slideOutToBottomAnimation {
+    animation: slideOutToBottom 0.3s ease-out;
+}
+
+.slideInFromLeftAnimation {
+    animation: slideInFromLeft 0.3s ease-out;
+}
+
+.slideOutToLeftAnimation {
+    animation: slideOutToLeft 0.3s ease-out;
+}
+
+.slideInFromRightAnimation {
+    animation: slideInFromRight 0.3s ease-out;
+}
+
+.slideOutToRightAnimation {
+    animation: slideOutToRight 0.3s ease-out;
+}
+
+.bounceAnimation {
+    animation: bounce 1s infinite;
+}
+
+.pulseAnimation {
+    animation: pulse 1s infinite;
+}
+
+.shakeAnimation {
+    animation: shake 0.5s ease-in-out;
+}
+
+.rotateAnimation {
+    animation: rotate 2s linear infinite;
+}
+
+.flipInXAnimation {
+    animation: flipInX 0.3s ease-out;
+}
+
+.flipOutXAnimation {
+    animation: flipOutX 0.3s ease-out;
+}

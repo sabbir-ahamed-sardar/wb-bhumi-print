@@ -1,0 +1,26 @@
+{
+  "name": "wb-bhumi-receipt-extension",
+  "version": "1.1.4",
+  "description": "Chrome extension for printing WB BHUMI documents with page border management",
+  "main": "main/mainone.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^30.0.5",
+    "jsdom": "^23.0.1"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "collectCoverageFrom": [
+      "js/**/*.js",
+      "!js/**/*.test.js"
+    ],
+    "testMatch": [
+      "**/*.test.js"
+    ]
+  }
+}

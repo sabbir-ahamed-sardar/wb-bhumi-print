@@ -1,0 +1,35 @@
+{
+   "action": {
+      "default_icon": {
+         "16": "icons/icon16.png",
+         "32": "icons/icon32.png",
+         "48": "icons/icon48.png",
+         "128": "icons/icon.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "WB Bhumi Receipt"
+   },
+   "background": {
+      "service_worker": "eventPage/eventPage.js"
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "js": [ "api-config.js", "content/content.js", "main/mainone.js" ],
+      "matches": [ "https://banglarbhumi.gov.in/*" , "http://banglarbhumi.gov.in/*" ],
+      "run_at": "document_idle"
+   } ],
+   "description": "Instant print of West Bengal Plot and Khatian. Print Khatian (খতিয়ান) & Plot (দাগ) details effortlessly.",
+   "icons": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgWPB0ZEd5uhWlg3reWb0gSPbWvbRM1+AEXn7uQD4Yzx1c2Yv4vuUbq5JmG2Tg/NnlPjvSp2qlGzSnWKFGAZRkUJHxKY/8Wd9cn8Ff/lU/fTrExkq3gKd1hWfjUKDGqpdoT7aEe9x4XPTqMAFqiUgbfqWHEvg6chFECsU2FYvpHtpBJ0bPgvnV7GmQd1hLxBklIgRpJIUq1KKtTvatg0el7EGZU8albKCsQJhcjSQq0+bMaWjZRa45TYlyAFSR6xyuBEAPue1Bp+yBAgLEziN1OvqOpQ/cpGv29uQHicl6AayHemPf/YlDVfFohwxoxY1VpCbLYOuL59pAt+uGXfXSwIDAQAB",
+   "manifest_version": 3,
+   "name": "WB Bhumi Receipt",
+   "permissions": [ "scripting", "activeTab", "notifications" ],
+   "host_permissions": [ "http://banglarbhumi.gov.in/*", "https://banglarbhumi.gov.in/*", "https://wbbhumiprint.com/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.4"
+}
