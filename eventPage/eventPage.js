@@ -1,15 +1,3 @@
-//copyright by https://wbbhumiprint.com
-//owner by Mr.gani 
-//
-
-// Set uninstall URL to redirect to feedback page
-chrome.runtime.setUninstallURL("https://www.wbbhumiprint.com/feedback.php", () => {
-  if (chrome.runtime.lastError) {
-    console.error("Error setting uninstall URL:", chrome.runtime.lastError);
-  } else {
-    console.log("Uninstall URL set successfully");
-  }
-});
 
 chrome.runtime.onMessage.addListener((req, sender, res) => {
   if (req.todo === "ShowSomthing") {

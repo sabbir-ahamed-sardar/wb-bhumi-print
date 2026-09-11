@@ -2,10 +2,10 @@
 
 [![Version](https://img.shields.io/badge/version-1.1.4-blue.svg)](manifest.json)
 [![Manifest](https://img.shields.io/badge/manifest-v3-green.svg)](manifest.json)
-[![Chrome](https://img.shields.io/badge/platform-Google%20Chrome%20%7C%20Edge%20%7C%20Brave-orange.svg)](https://chromewebstore.google.com/detail/wb-bhumi-print/ijamjkfkgffakimceholgejfoeldblel)
+[![Platform](https://img.shields.io/badge/platform-Google%20Chrome%20%7C%20Edge%20%7C%20Brave-orange.svg)](#)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](LICENSE)
 
-**WB Bhumi Receipt** (WB BHUMI PRINT) is a fast, powerful, and lightweight Google Chrome extension designed for West Bengal citizens, CSC/Tathya Mitra Kendra operators, and land revenue professionals. It enables one-click, perfectly formatted printing of **Khatian (খতিয়ান)** and **Plot / Daag (দাগ)** records directly from the official **Banglarbhumi** portal ([banglarbhumi.gov.in](https://banglarbhumi.gov.in)).
+**WB Bhumi Receipt** is a fast, powerful, and lightweight browser extension designed for West Bengal citizens, CSC/Tathya Mitra Kendra operators, and land revenue professionals. It enables one-click, perfectly formatted printing of **Khatian (খতিয়ান)** and **Plot / Daag (দাগ)** records directly from the official **Banglarbhumi** portal ([banglarbhumi.gov.in](https://banglarbhumi.gov.in)).
 
 ---
 
@@ -70,14 +70,14 @@
     ├── icon16.png         # Extension toolbar icon (16x16)
     ├── icon32.png         # Extension icon (32x32)
     ├── icon48.png         # Chrome management icon (48x48)
-    └── icon.png           # Chrome Web Store & detail icon (128x128)
+    └── icon.png           # Detail icon (128x128)
 ```
 
 ---
 
 ## 🚀 Installation Guide
 
-### Option 1: Load Unpacked (Developer Mode)
+### Load Unpacked (Developer Mode)
 
 1. Clone or download this repository to your local machine:
    ```bash
@@ -90,11 +90,6 @@
 6. Select the folder containing `manifest.json`.
 7. The **WB Bhumi Receipt** icon will now appear in your browser toolbar!
 
-### Option 2: Chrome Web Store
-
-Install directly from the official store listing:
-👉 [WB Bhumi Print on Chrome Web Store](https://chromewebstore.google.com/detail/wb-bhumi-print/ijamjkfkgffakimceholgejfoeldblel)
-
 ---
 
 ## 📖 How to Use
@@ -106,7 +101,7 @@ Install directly from the official store listing:
    - Select your **District**, **Block**, and **Mouza**.
    - Search by **Khatian No.** or **Plot No.**.
 3. **Print Record**:
-   - Click the **WB Bhumi Receipt** icon in your Chrome toolbar.
+   - Click the **WB Bhumi Receipt** icon in your browser toolbar.
    - Click **Khatian Print** (for Khatian details) or **Plot Print** (for Plot details).
    - The extension will automatically format the data, compute totals, and open your browser's Print Dialog.
    - Select **Save as PDF** or send directly to your connected printer.
@@ -122,7 +117,7 @@ This extension requests minimal permissions required for its functionality:
 | `activeTab` | Accesses the currently active tab when you click the extension popup to read land record tables. |
 | `scripting` | Dynamically injects the print formatting logic into the active Banglarbhumi tab. |
 | `notifications` | Displays status updates and notifications regarding extension features. |
-| `host_permissions` | Scoped strictly to `banglarbhumi.gov.in` and `wbbhumiprint.com`. |
+| `host_permissions` | Scoped strictly to `banglarbhumi.gov.in`. |
 
 > **Privacy Guarantee**: All record parsing and print formatting take place locally inside your browser. No personal property data or land records are collected or shared.
 
@@ -161,8 +156,6 @@ npm run test:coverage
 ## 🤝 Support & Feedback
 
 If you encounter any issues or have feature suggestions:
-- **Chrome Web Store Review**: [Rate Us ⭐](https://chromewebstore.google.com/detail/wb-bhumi-print/ijamjkfkgffakimceholgejfoeldblel/reviews)
-- **Website**: [wbbhumiprint.com](https://wbbhumiprint.com)
 - **Issues**: Submit an issue via the [GitHub Issues](https://github.com/sabbir-ahamed-sardar/wb-bhumi-print/issues) tab.
 
 ---

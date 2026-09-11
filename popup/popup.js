@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     } catch (error) {
         console.error('API configuration error:', error);
         // Fallback configuration
-        API_BASE_URL = 'https://wbbhumiprint.com/api';
+        API_BASE_URL = '/api';
         secureAPI = {
             endpoints: {
                 login: 'login.php',

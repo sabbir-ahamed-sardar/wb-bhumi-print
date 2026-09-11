@@ -1,6 +1,3 @@
-//copyright by https://wbbhumiprint.com
-//owner by Mr.gani 
-//
 
 document.addEventListener("DOMContentLoaded",
   function () {
@@ -480,7 +477,6 @@ document.addEventListener("DOMContentLoaded",
                 </style>
               </head>
               <body style="position: relative;">
-                <img src="https://wbbhumiprint.com/bgext.png" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60%; height: 60%; object-fit: contain; opacity: 0.40; z-index: 0; pointer-events: none; -webkit-print-color-adjust: exact; print-color-adjust: exact; color-adjust: exact;" alt="">
                 <div class="content-wrapper" style="position: relative; z-index: 2;">
                   <div class="logo-container">
                     <img src="https://banglarbhumi.gov.in/BanglarBhumi/images/bl.png" alt="Logo">
@@ -909,7 +905,6 @@ document.addEventListener("DOMContentLoaded",
                 </style>
               </head>
               <body style="position: relative;">
-                <img src="https://wbbhumiprint.com/bgext.png" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60%; height: 60%; object-fit: contain; opacity: 0.40; z-index: 0; pointer-events: none; -webkit-print-color-adjust: exact; print-color-adjust: exact; color-adjust: exact;" alt="">
                 <div class="content-wrapper" style="position: relative; z-index: 2;">
                   <div class="logo-container">
                     <img src="https://banglarbhumi.gov.in/BanglarBhumi/images/bl.png" alt="Logo">

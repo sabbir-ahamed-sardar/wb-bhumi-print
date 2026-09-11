@@ -1,6 +1,3 @@
-//copyright by https://wbbhumiprint.com
-//owner by Mr.gani 
-//
 
 // Auto Captcha Loading ---------------------
 let captchaInterval = null;

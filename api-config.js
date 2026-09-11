@@ -1,7 +1,5 @@
 /**
  * Secure API Configuration
- * Copyright by https://wbbhumiprint.com
- * Owner by Mr.gani
  * 
  * This class provides secure API configuration with obfuscation,
  * rate limiting, and input sanitization features.
@@ -10,7 +8,7 @@ class SecureAPIConfig {
     constructor() {
         // Obfuscated API endpoints to prevent easy discovery
         this.endpoints = {
-            base: this.obfuscateUrl('https://wbbhumiprint.com/api'),
+            base: this.obfuscateUrl('/api'),
             login: this.obfuscateUrl('login.php'),
             register: this.obfuscateUrl('register.php'),
             logout: this.obfuscateUrl('logout.php'),
@@ -28,10 +26,8 @@ class SecureAPIConfig {
             requests: new Map()
         };
         
-        // Allowed origins for CORS - More restrictive
-        this.allowedOrigins = [
-            'chrome-extension://ijamjkfkgffakimceholgejfoeldblel'
-        ];
+        // Allowed origins for CORS
+        this.allowedOrigins = [];
     }
     
     /**

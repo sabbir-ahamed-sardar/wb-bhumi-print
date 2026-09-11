@@ -1,6 +1,3 @@
-//copyright by https://wbbhumiprint.com
-//owner by Mr.gani 
-//
 
 // Enhanced Slider functionality
 document.addEventListener('DOMContentLoaded', function() {
